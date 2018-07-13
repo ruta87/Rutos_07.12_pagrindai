@@ -7,7 +7,6 @@ public class FirstTask {
         Scanner scanner = new Scanner(System.in);
         /*System.out.println("Iveskite zodi");
         String word = scanner.nextLine();
-
         System.out.println(word);*/
         getCorrectWord(scanner);
     }
