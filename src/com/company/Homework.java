@@ -12,13 +12,16 @@ public class Homework {
         int skaicius = scanner.nextInt();
 
 
-        private static int countNumber(int count) {
-            int result = 0;
-            if (skaicius()) % 2 == 0) {
 
-        }
 
 
     }
+    private static int countNumber(int count) {
+            int result = 0;
+            if ( count % 2 == 0) {
+
+            }
+            return  0;
 }
 
+}
