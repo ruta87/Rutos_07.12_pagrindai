@@ -11,7 +11,7 @@ public class FifthTask {
         double kilometrai = NumberUtils.getCorrectNumber(scanner, "Iveskite prasau nuvaziuotus km: ");
         double kuras = NumberUtils.getCorrectNumber(scanner, "Iveskite prasau kuro sanausas km/100: ");
 
-        double result = (kuras*100)/kilometrai;
+        double result = getUserAverage(kilometrai, kuras);
 
         System.out.println("Jusu automobilio vidutinis sunaudota kuro norma:" + result);
     }
