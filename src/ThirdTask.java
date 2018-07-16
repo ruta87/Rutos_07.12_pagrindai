@@ -1,3 +1,4 @@
+import Utils.NumberUtils;
 import com.company.SecondTask;
 
 import java.util.InputMismatchException;
@@ -28,38 +29,27 @@ public class ThirdTask {
          }
     }
     private double trikampioPlotas(Scanner scanner){
-        double a = getCorrectNumber(scanner,"Iveskite a statini");
-        double b = getCorrectNumber(scanner,"Iveskite b statini");
+        double a = NumberUtils.getCorrectNumber(scanner,"Iveskite a statini");
+        double b = NumberUtils.getCorrectNumber(scanner,"Iveskite b statini");
         return (a*b)/2;
 
     }
     private double staciakampioPlotas(Scanner scanner){
-        double a = getCorrectNumber(scanner,"Iveskite a krastines ilgi");
-        double b = getCorrectNumber(scanner,"Iveskite b krastines ilgi");
+        double a = NumberUtils.getCorrectNumber(scanner,"Iveskite a krastines ilgi");
+        double b = NumberUtils.getCorrectNumber(scanner,"Iveskite b krastines ilgi");
         return (a*b);
     }
     private double kvadratoPlotas(Scanner scanner){
         System.out.println("Iveskite kvadrato krastines ilgi");
-        double a = getCorrectNumber(scanner,"Iveskite kvadrato krastines ilgi");
+        double a = NumberUtils.getCorrectNumber(scanner,"Iveskite kvadrato krastines ilgi");
         return  a*a;
     }
     private double apskritimoPlotas(Scanner scanner){
-        double a = getCorrectNumber(scanner,"spindulio ilgi");
+        double a = NumberUtils.getCorrectNumber(scanner,"spindulio ilgi");
         return Math.PI*Math.pow(a, 2);//3.1415*(a*a);
     }
 
-    private double getCorrectNumber(Scanner sc, String message){
-        double result;
-        while (true) {
-            System.out.println(message);
-            try {
-                result = sc.nextDouble();
-                break;
-            }catch (InputMismatchException e){
-                System.out.println("Nepavyko pakartoki");
-                sc.nextLine();
-            }
-        }
-        return result;
+
     }
-}
+
+
